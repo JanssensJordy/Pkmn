@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import {PkmnSearchService} from './pkmn-search.service';
 import {PkmnSaveService} from './pkmn-save.service';
+import {Pkmn} from './Pkmn';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,7 @@ import {PkmnSaveService} from './pkmn-save.service';
 export class AppComponent {
   title = 'Pkmn';
   search: FormGroup;
-  pkmnList: [];
+  pkmnList: Pkmn[];
 
     ngOnInit() {
        this.search = new FormGroup({

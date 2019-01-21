@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PkmnSaveService } from './pkmn-save.service';
 import { PkmnSearchService } from './pkmn-search.service';
-import { PkmnSearchComponent } from './pkmn-search/pkmn-search.component';
 
 @NgModule({
   declarations: [

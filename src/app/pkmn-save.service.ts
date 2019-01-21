@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import {Pkmn} from './Pkmn';
 
 @Injectable({
   providedIn: 'root'
@@ -6,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class PkmnSaveService {
 
   constructor() { }
-  savePkmn(pkmnList: []){
+  savePkmn(pkmnList: Pkmn[]){
     for(let pkmn of pkmnList){
       localStorage.setItem(pkmn.name, JSON.stringify(pkmn));;
     }
